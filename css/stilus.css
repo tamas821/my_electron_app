@@ -1,0 +1,10 @@
+body {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  color: #45828E;
+  background-color: #A5ECFA;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}

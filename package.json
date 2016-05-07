@@ -1,0 +1,26 @@
+{
+  "name": "my_electron_app",
+  "version": "0.0.1",
+  "description": "An Electron application I hope to make awsome",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamas821/my_electron_app.git"
+  },
+  "keywords": [
+    "Electron",
+    "dontknowyet"
+  ],
+  "author": "tamas821",
+  "license": "dontknowyet",
+  "bugs": {
+    "url": "https://github.com/tamas821/my_electron_app/issues"
+  },
+  "homepage": "https://github.com/tamas821/my_electron_app",
+  "devDependencies": {
+    "electron-prebuilt": "^0.37.8"
+  }
+}
