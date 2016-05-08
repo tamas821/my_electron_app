@@ -7,14 +7,29 @@
   </head>
   <body>
     <h1>Welcome to Tomtom's app!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <p>
+      <!-- All of the Node.js APIs are available in this renderer process. -->
+      <b>Displaying versions by accessing nodejs process variable from html:</b><br>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chromium <script>document.write(process.versions.chrome)</script>
+      and Electron <script>document.write(process.versions.electron) </script>.
+    </p>
+
+      <!-- Second way of displaying same data, simply putting js to separate file -->
+      <script src="js/display_versions.js"></script>
+      <script>
+        displayversions()
+      </script>
+
+      <!-- Third way of displaying same data, using nodejs module -->
+      <script>
+      var mymodule = require('./my_nodejs_modules/display_versions_module.js')
+      mymodule()
+      </script>
+
+
+
   </body>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+
 </html>
